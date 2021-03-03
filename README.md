@@ -7,7 +7,7 @@ This Python class aims to make this process automatic, while providing a **metho
 ![image](/image/LR.png)
 
 ## Installation
-This project is not packaged. Simply copy the file **BootstrapEstimator.py** to your working directory and type
+This project is not packaged. Simply copy the file **BootstrapEstimator.py** to your working directory and use
 
 ```python
 from BootstrapEstimator import BootstrapEstimator
@@ -34,7 +34,7 @@ from sklearn.metrics import mean_squared_error as mse
 # Create an instance of the class
 BE = BootstrapEstimator(LR())
 
-# Fit bootsrap models and calculate the RMS for each replica
+# Fit bootsrap models and calculate the MSE for each replica
 BE.fit_calculate(X, y, mse, n = 10000, test_size = 0.1)
 
 BE.plot(bins = 60)
