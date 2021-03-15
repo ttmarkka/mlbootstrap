@@ -34,7 +34,7 @@ from sklearn.metrics import mean_squared_error as mse
 # Create an instance of the class
 BE = BootstrapEstimator(LR())
 
-# Fit bootsrap models and calculate the MSE for each replica
+# Fit bootstrap models and calculate the MSE for each replica
 BE.fit_calculate(X, y, mse, n = 10000, test_size = 0.1)
 
 BE.plot(bins = 60)
