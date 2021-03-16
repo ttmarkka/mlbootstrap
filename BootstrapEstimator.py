@@ -104,7 +104,7 @@ class BootstrapEstimator:
             ax.plot([M, M], [0,2*ylims[1]], color = 'k', linestyle = 'dashed',
                         label = label)
 
-            # Condifence interval
+            # Confidence interval
             xvals = [cl[0], cl[0], cl[1], cl[1]]
             yvals = [0, 2*ylims[1], 2*ylims[1], 0]
             label = r'%{:.3} Conf. Int. = ({:.4}, {:.4})'.format(
