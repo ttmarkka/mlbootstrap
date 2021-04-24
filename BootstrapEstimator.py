@@ -95,7 +95,7 @@ class BootstrapEstimator:
             # Histogram from seaborn
             dat = self.results[data_set]
             sns.histplot(x = dat, stat = stat, ax = ax, bins = self.bins,
-                         color = color)
+                         color = color, edgecolor = 'k')
             ylims = ax.get_ylim() # Store for later
 
             # Plot the mean
