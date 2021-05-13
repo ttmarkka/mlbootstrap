@@ -4,7 +4,7 @@ The bootstrap method is a commonly used resampling technique for evaluating the 
 
 This Python class aims to make this process automatic, while providing a **method for generating a plot**. Intended to be used with [sklearn](https://scikit-learn.org/stable/).
 
-Includes functionality appropriate for **times series** data, where splitting data into training and testin is done in a time-ordered manner.
+Includes functionality appropriate for **times series** data, where splitting data into training and testing is done in a time-ordered manner.
 
 ![image](/image/LR.png)
 
