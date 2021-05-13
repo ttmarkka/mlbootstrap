@@ -58,8 +58,8 @@ class BootstrapEstimator:
     def __init__(self, classifier):
 
         ''' Class for estimating the accuracy of a given ML model
-        by training a set of of models with bootstrapped datasets from a given
-        dataset (with replacement).'''
+            by training a set of of models with bootstrapped datasets
+        f   rom a given dataset (with replacement).'''
 
         self.classifier = classifier
 
@@ -67,11 +67,11 @@ class BootstrapEstimator:
         test_size = 0.25, frac = 1.0, random_state = None, stratify = None,
         verbose = False, time_series = False, n_splits = 4):
 
-        ''' Method that fits models for bootstrapped data and calculates the
-        'acc_score' for each bootstrapped data split into training and test
-        sets. The 'acc_score' can be for a classifier
-        such as sklearn.metrics.accuracy_score or a regressor
-        such as sklearn.metrics.mean_squared_error.'''
+        ''' Method that fits models for bootstrapped data and
+            calculates the 'acc_score' for each bootstrapped
+            data split into training and test sets. The 'acc_score'
+            can be for a classifier such as sklearn.metrics.accuracy_score
+            or a regressor such as sklearn.metrics.mean_squared_error.'''
 
         self.results = {'train':[], 'test':[]}
         self.accuracy_score = acc_score
@@ -158,9 +158,8 @@ class BootstrapEstimator:
     def plot(self, bins = 20, conf = 0.9, stat = 'probability'):
 
         ''' A Method that plots histograms for the train and test results,
-        respectively. The histograms also show the chosen confidence
-        interval as a shaded region.
-        '''
+            respectively. The histograms also show the chosen confidence
+            interval as a shaded region.'''
 
         # edges
         self.bins = np.histogram(np.hstack((self.results['train'],

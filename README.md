@@ -4,13 +4,18 @@ The bootstrap method is a commonly used resampling technique for evaluating the 
 
 This Python class aims to make this process automatic, while providing a **method for generating a plot**. Intended to be used with [sklearn](https://scikit-learn.org/stable/).
 
+Includes functionality appropriate for **times series** data, where splitting data into training and testin is done in a time-ordered manner.
+
 ![image](/image/LR.png)
 
 ## Installation
 This project is not packaged. Simply copy the file **BootstrapEstimator.py** to your working directory and use
 
 ```python
+# Class
 from BootstrapEstimator import BootstrapEstimator
+# Just the train/test splitter function for time series
+from BootstraEstimator import train_test_split_ts
 ```
 
 ## Dependencies
@@ -42,4 +47,4 @@ BE.plot(bins = 60)
 Please see the Jupyter notebook for more information and examples.
 
 ## version
-0.0.1
+0.0.2
